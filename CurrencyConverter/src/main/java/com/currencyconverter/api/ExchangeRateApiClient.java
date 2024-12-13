@@ -8,15 +8,24 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class ExchangeRateApiClient {
+    private static ExchangeRateApiClient instance;  // Instancia única
     private final String apiUrl;
 
-    // Constructor para inicializar la URL de la API
-    public ExchangeRateApiClient() {
+    // Constructor privado para evitar la creación de nuevas instancias
+    private ExchangeRateApiClient() {
         Dotenv dotenv = Dotenv.load();
         this.apiUrl = dotenv.get("API_URL");
         if (apiUrl == null || apiUrl.isEmpty()) {
             throw new IllegalStateException("La variable API_URL no está configurada en el archivo .env.");
         }
+    }
+
+    // Método para obtener la única instancia de la clase
+    public static synchronized ExchangeRateApiClient getInstance() {
+        if (instance == null) {
+            instance = new ExchangeRateApiClient();
+        }
+        return instance;
     }
 
     // Método para realizar una solicitud GET a la API
@@ -41,9 +50,5 @@ public class ExchangeRateApiClient {
             }
             return response.toString();
         }
-    }
-
-    public String getApiUrl() {
-        return apiUrl;
     }
 }
