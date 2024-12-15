@@ -8,10 +8,9 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class ExchangeRateApiClient {
-    private static ExchangeRateApiClient instance;  // Instancia única
+    private static ExchangeRateApiClient instance;
     private final String apiUrl;
 
-    // Constructor privado para evitar la creación de nuevas instancias
     private ExchangeRateApiClient() {
         Dotenv dotenv = Dotenv.load();
         this.apiUrl = dotenv.get("API_URL");
@@ -20,7 +19,6 @@ public class ExchangeRateApiClient {
         }
     }
 
-    // Método para obtener la única instancia de la clase
     public static synchronized ExchangeRateApiClient getInstance() {
         if (instance == null) {
             instance = new ExchangeRateApiClient();
@@ -28,7 +26,6 @@ public class ExchangeRateApiClient {
         return instance;
     }
 
-    // Método para realizar una solicitud GET a la API
     public String get(String endpoint) throws Exception {
         String fullUrl = apiUrl + endpoint;
         URL url = new URL(fullUrl);

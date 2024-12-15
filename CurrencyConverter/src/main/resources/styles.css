@@ -1,0 +1,93 @@
+/* Global Styles */
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-background-color: #f4f4f9;
+    -fx-padding: 20px;
+}
+
+/* Background Container */
+.background-container {
+    -fx-background-image: url('/images/BackgroundCurrencyConverter.png');
+    -fx-background-size: cover;
+    -fx-padding: 20;
+}
+
+/* Logo Styles */
+.logo {
+    -fx-alignment: center;
+    -fx-margin: 10;
+}
+
+/* Label Styles */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white; /* Cambiar el color del texto a blanco */
+}
+
+/* ComboBox Styles */
+.combo-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px;
+}
+
+.combo-box:hover {
+    -fx-border-color: #ff6b9e;
+}
+
+.combo-box .combo-box-popup {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+}
+
+/* TextField Styles */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 7px 7px 7px 15px; /* Ajuste el padding a la izquierda */
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px;
+}
+
+.text-field:focused {
+    -fx-border-color: #ff6b9e;
+}
+
+/* Button Styles */
+.button-convert,
+.button-copy {
+    -fx-background-color: #ed8592;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 25px;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+}
+
+.button-convert:hover,
+.button-copy:hover {
+    -fx-background-color: #cf7782;
+}
+
+.button-convert:pressed,
+.button-copy:pressed {
+    -fx-background-color: #ae5762;
+}
+
+.label-result {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ed8592;
+    -fx-padding: 10px;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
