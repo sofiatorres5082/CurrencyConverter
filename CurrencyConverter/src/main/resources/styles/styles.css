@@ -61,6 +61,7 @@
 }
 
 /* Button Styles */
+.history-button,
 .button-convert,
 .button-copy {
     -fx-background-color: #ed8592;
@@ -73,15 +74,18 @@
     -fx-cursor: hand;
 }
 
+.history-button:hover,
 .button-convert:hover,
 .button-copy:hover {
     -fx-background-color: #cf7782;
 }
 
+.history-button:pressed,
 .button-convert:pressed,
 .button-copy:pressed {
     -fx-background-color: #ae5762;
 }
+
 
 .label-result {
     -fx-font-size: 20px;

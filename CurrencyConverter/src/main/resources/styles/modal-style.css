@@ -1,0 +1,33 @@
+/* MODAL */
+
+.modal-header {
+    -fx-background-color: #ed8592;
+    -fx-padding: 10px 20px;
+    -fx-alignment: center;
+
+}
+
+.modal-title {
+    -fx-font-family: "Pedagogique Medium Regular";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.modal-close-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 5px;
+}
+
+.modal-close-button:hover {
+    -fx-text-fill: #ddd;
+}
+
+.modal-list-view {
+    -fx-background-color: white;
+    -fx-border-width: 0;
+}
+

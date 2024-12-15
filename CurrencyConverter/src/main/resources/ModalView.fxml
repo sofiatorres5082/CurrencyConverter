@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="modal-container" stylesheets="@styles/modal-style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.currencyconverter.ui.ModalViewController">
+   <top>
+      <HBox prefHeight="50.0" prefWidth="600.0" styleClass="modal-header" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="titleLabel" styleClass="modal-title" text="Historial de Conversiones Realizadas" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <ListView fx:id="listView" prefHeight="350.0" prefWidth="600.0" styleClass="modal-list-view" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
