@@ -77,7 +77,7 @@ src/
 
 1. **Clonar el repositorio:**  
    ```bash
-   git clone https://github.com/tu-repo/conversor-monedas.git
+   git clone https://github.com/sofiatorres5082/CurrencyConverter.git
    cd conversor-monedas
 2. **Configurar las variables de entorno:**
    Crea un archivo .env en la raíz del proyecto y define tu url junto con la clave API para ExchangeRate
