@@ -5,7 +5,7 @@ import java.util.Map;
 public class Currency {
     private String base_code;
     private Map<String, Double> conversion_rates;
-    
+
     public String getBaseCode() {
         return base_code;
     }
