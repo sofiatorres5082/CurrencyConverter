@@ -63,11 +63,12 @@ src/
 
 ☆ ───── **Capturas de Pantalla** ───── ☆
 
-✨ **Interfaz Principal del Conversor de Monedas**  
-![Interfaz Principal](./resources/screenshots/MainView.png)  
+✨ **Interfaz del Conversor de Monedas**  
 
-✨ **Historial de Conversiones**  
-![Historial de Conversiones](./resources/screenshots/ModalView.png)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/49c91073-a47b-42dd-a6ef-150ca9c18c34" alt="Interfaz principal" width="45%" style="margin-right:10px;"/>
+  <img src="https://github.com/user-attachments/assets/37706303-5cb7-418b-90ab-ccfdd60ae29f" alt="Historial de Conversiones" width="45%"/>
+</p>
 
 ---
 
