@@ -5,7 +5,7 @@ Este es un proyecto para convertir entre distintas monedas utilizando tasas de c
 ---
 
 
-☆ ───── **Carasterísticas** ───── ☆
+☆ ───── **Características** ───── ☆
 
 - `Conversión de Monedas`: Convierte entre monedas como ARS, BOB, BRL, CLP, COP y USD. 
 - `Historial de Conversiones`: Registra y muestra un historial de las conversiones realizadas en la sesión.
@@ -28,7 +28,7 @@ Este es un proyecto para convertir entre distintas monedas utilizando tasas de c
 ---
 
 
- ☆ ───── ***Estructura del Proyecto** ───── ☆
+ ☆ ───── **Estructura del Proyecto** ───── ☆
 
 La estructura del proyecto es la siguiente:
 
@@ -73,7 +73,7 @@ src/
 ---
 
 
-## 🚀 **Instalación y Uso**
+🚀 **Instalación y Uso**
 
 1. **Clonar el repositorio:**  
    ```bash
