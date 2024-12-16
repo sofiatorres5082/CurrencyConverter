@@ -1,24 +1,20 @@
-/* Global Styles */
 .root {
     -fx-font-family: 'Segoe UI', sans-serif;
     -fx-background-color: #f4f4f9;
     -fx-padding: 20px;
 }
 
-/* Background Container */
 .background-container {
     -fx-background-image: url('/images/BackgroundCurrencyConverter.png');
     -fx-background-size: cover;
     -fx-padding: 20;
 }
 
-/* Logo Styles */
 .logo {
     -fx-alignment: center;
     -fx-margin: 10;
 }
 
-/* Label Styles */
 .label {
     -fx-font-family: 'Pedagogique Medium', sans-serif;
     -fx-font-size: 14px;
@@ -26,7 +22,6 @@
     -fx-text-fill: white;
 }
 
-/* ComboBox Styles */
 .combo-box {
     -fx-background-color: #ffffff;
     -fx-border-color: #e0e0e0;
@@ -46,7 +41,6 @@
     -fx-background-radius: 10px;
 }
 
-/* TextField Styles */
 .text-field {
     -fx-background-color: #ffffff;
     -fx-border-color: #e0e0e0;
@@ -61,7 +55,6 @@
     -fx-border-color: #ff6b9e;
 }
 
-/* Button Styles */
 .history-button,
 .button-convert,
 .button-copy {
