@@ -13,6 +13,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
+import javafx.scene.text.Font;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -47,6 +48,21 @@ public class MainViewController {
 
     @FXML
     private void initialize() {
+        Font pedagogiqueBold = Font.loadFont(getClass().getResourceAsStream("/fonts/PedagogiqueBold.otf"), 12);
+        Font pedagogiqueMedium = Font.loadFont(getClass().getResourceAsStream("/fonts/PedagogiqueMedium.otf"), 18);
+
+        if (pedagogiqueBold != null) {
+            System.out.println("Pedagogique Bold cargada: " + pedagogiqueBold.getName());
+        } else {
+            System.out.println("Error al cargar la fuente Pedagogique Bold.");
+        }
+
+        if (pedagogiqueMedium != null) {
+            System.out.println("Pedagogique Medium cargada: " + pedagogiqueMedium.getName());
+        } else {
+            System.out.println("Error al cargar la fuente Pedagogique Medium.");
+        }
+
         comboBase.getItems().addAll(Arrays.asList("USD (Dólares)", "BOB (Bolivianos)", "BRL (Reales)", "ARS (Pesos Argentinos)", "CLP (Pesos Chilenos)", "COP (Pesos Colombianos)"));
         comboTarget.getItems().addAll(Arrays.asList("USD (Dólares)", "BOB (Bolivianos)", "BRL (Reales)", "ARS (Pesos Argentinos)", "CLP (Pesos Chilenos)", "COP (Pesos Colombianos)"));
 
@@ -57,8 +73,8 @@ public class MainViewController {
         copyButton.setOnAction(e -> copiarResultado());
 
         ImageView historyIcon = new ImageView(new Image(getClass().getResourceAsStream("/icons/history-icon.png")));
-        historyIcon.setFitWidth(30);
-        historyIcon.setFitHeight(30);
+        historyIcon.setFitWidth(25);
+        historyIcon.setFitHeight(25);
 
         historyButton.setGraphic(historyIcon);
     }

@@ -20,9 +20,10 @@
 
 /* Label Styles */
 .label {
+    -fx-font-family: 'Pedagogique Medium', sans-serif;
     -fx-font-size: 14px;
     -fx-font-weight: bold;
-    -fx-text-fill: white; /* Cambiar el color del texto a blanco */
+    -fx-text-fill: white;
 }
 
 /* ComboBox Styles */
@@ -51,7 +52,7 @@
     -fx-border-color: #e0e0e0;
     -fx-border-radius: 20px;
     -fx-background-radius: 20px;
-    -fx-padding: 7px 7px 7px 15px; /* Ajuste el padding a la izquierda */
+    -fx-padding: 7px 7px 7px 15px;
     -fx-font-size: 14px;
     -fx-pref-width: 200px;
 }
@@ -65,8 +66,9 @@
 .button-convert,
 .button-copy {
     -fx-background-color: #ed8592;
+    -fx-font-family: 'Vividly', sans-serif;
     -fx-text-fill: white;
-    -fx-font-size: 16px;
+    -fx-font-size: 24px;
     -fx-font-weight: bold;
     -fx-padding: 10px 20px;
     -fx-background-radius: 25px;
@@ -86,9 +88,9 @@
     -fx-background-color: #ae5762;
 }
 
-
 .label-result {
-    -fx-font-size: 20px;
+    -fx-font-family: 'Pedagogique Medium', sans-serif;
+    -fx-font-size: 18px;
     -fx-font-weight: bold;
     -fx-text-fill: #ed8592;
     -fx-padding: 10px;

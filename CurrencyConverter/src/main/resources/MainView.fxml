@@ -4,55 +4,35 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.layout.VBox?>
-
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
 <AnchorPane prefHeight="595.0" prefWidth="800.0" styleClass="background-container" stylesheets="@styles/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.currencyconverter.ui.MainViewController">
 
-    <!-- Contenedor principal con contenido central -->
-    <AnchorPane layoutX="0" layoutY="0" prefWidth="600.0" prefHeight="595.0">
-        <!-- Logo -->
-        <ImageView fx:id="logoImageView" fitHeight="157.0" fitWidth="425.0" layoutX="195.0" layoutY="21.0" preserveRatio="true" styleClass="logo">
+    <AnchorPane prefHeight="595.0" prefWidth="600.0">
+
+        <ImageView fx:id="logoImageView" fitHeight="153.0" fitWidth="459.0" layoutX="177.0" layoutY="11.0" preserveRatio="true" styleClass="logo">
             <image>
                 <Image url="@images/CurrencyConverterLogo.png" />
             </image>
         </ImageView>
 
-        <!-- Botón Historial -->
-        <Button fx:id="historyButton" layoutX="708.0" layoutY="30.0" onAction="#mostrarHistorial" prefHeight="44.0" prefWidth="44.0" styleClass="history-button" />
+        <Button fx:id="historyButton" layoutX="712.0" layoutY="25.0" onAction="#mostrarHistorial" prefHeight="32.0" prefWidth="29.0" styleClass="history-button" />
 
-        <!-- Labels y ComboBoxes -->
-        <Label fx:id="labelBase" layoutX="245.0" layoutY="191.0" text="Moneda Base:" />
+        <Label fx:id="labelBase" layoutX="230.0" layoutY="190.0" styleClass="label" text="Moneda Base:" />
         <ComboBox fx:id="comboBase" layoutX="371.0" layoutY="180.0" />
 
-        <Label fx:id="labelTarget" layoutX="245.0" layoutY="256.0" text="Moneda Objetivo:" />
+        <Label fx:id="labelTarget" layoutX="232.0" layoutY="255.0" styleClass="label" text="Moneda Objetivo:" />
         <ComboBox fx:id="comboTarget" layoutX="371.0" layoutY="245.0" />
 
-        <Label fx:id="labelAmount" layoutX="245.0" layoutY="320.0" text="Cantidad:" />
+        <Label fx:id="labelAmount" layoutX="230.0" layoutY="319.0" styleClass="label" text="Cantidad:" />
         <TextField fx:id="inputAmount" layoutX="373.0" layoutY="309.0" prefHeight="39.0" promptText="Ingresa la cantidad" />
 
-        <!-- Botón Convertir -->
-        <Button fx:id="convertButton" layoutX="352.0" layoutY="389.0" onAction="#realizarConversion" styleClass="button-convert" text="Convertir" />
+        <Button fx:id="convertButton" alignment="CENTER" contentDisplay="CENTER" layoutX="345.0" layoutY="390.0" onAction="#realizarConversion" styleClass="button-convert" text="Convertir" />
 
-        <!-- Resultado -->
-        <Label fx:id="resultLabel" layoutX="126.0" layoutY="451.0" prefHeight="44.0" prefWidth="564.0" styleClass="label-result" text="Resultado" textAlignment="CENTER" />
+        <Label fx:id="resultLabel" layoutX="125.0" layoutY="451.0" prefHeight="44.0" prefWidth="564.0" styleClass="label-result" text="Resultado" textAlignment="CENTER" />
 
-        <!-- Botón Copiar -->
-        <Button fx:id="copyButton" layoutX="324.0" layoutY="514.0" onAction="#copiarResultado" styleClass="button-copy" text="Copiar Resultado" />
+        <Button fx:id="copyButton" alignment="CENTER" contentDisplay="CENTER" layoutX="314.0" layoutY="514.0" onAction="#copiarResultado" styleClass="button-copy" text="Copiar Resultado" />
     </AnchorPane>
-
-    <!-- Menú lateral de historial, inicialmente invisible -->
-    <StackPane fx:id="sideMenu" layoutX="600.0" layoutY="0.0" prefWidth="200.0" prefHeight="595.0" styleClass="side-menu" visible="false">
-        <VBox spacing="10" styleClass="menu-content">
-            <Label text="Historial de Conversiones" styleClass="menu-title"/>
-            <!-- Aquí puedes agregar dinamicamente las conversiones previas -->
-            <VBox fx:id="historyList" styleClass="history-list">
-                <!-- Aquí se listarán las conversiones -->
-            </VBox>
-        </VBox>
-    </StackPane>
-
 </AnchorPane>
