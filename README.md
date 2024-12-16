@@ -63,7 +63,11 @@ src/
 
 ☆ ───── **Capturas de Pantalla** ───── ☆
 
-✨ Interfaz del Conversor de Monedas:
+✨ **Interfaz Principal del Conversor de Monedas**  
+![Interfaz Principal](./resources/screenshots/MainView.png)  
+
+✨ **Historial de Conversiones**  
+![Historial de Conversiones](./resources/screenshots/ModalView.png)
 
 ---
 
